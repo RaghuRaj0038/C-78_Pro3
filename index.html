@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Fammily Book C-78 Pro </title>
+    </head>
+
+    <body>
+        <center>
+
+            <h1 id="heading"> My Family Book</h1>
+            <br>
+            <img id="image" style = "width: 500px; height: 500px;" src="https://2007manjushree.github.io/family_book/fammilt%20book%20pic.jfif">
+            <br>
+            <h3 id="name"></h3>
+            <br>
+            <button type="button" style = "padding: 5px; background-color: rgb(0, 174, 255); color: rgb(0, 0, 0); width: 100px; height: 30px;" id="button_next" onclick="next()">
+                Next
+            </button>
+
+            <script>
+                var names_array = ["Raghu", "Mini", "Sunita", "Vijay", "Pinki"];
+                var images_array = ["Raghu.jpeg", "Mini.jpeg", "Mummy.jpeg", "Nanu.jpeg", "Pinki.jpeg"];
+                var i = 0;
+
+                function next() {
+                    document.getElementById("image").src = images_array[i];
+                    document.getElementById("name").textContent = names_array[i];
+                    i++;
+                    if(i==5) {
+                        i=0;
+                    }
+                };
+
+            </script>
+
+
+        </center>
+    </body>
+</html>
